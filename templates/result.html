@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Data</title>
+    <style>
+        #patients {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          #patients td, #patients th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          #patients tr:nth-child(even){background-color: #f2f2f2;}
+          
+          #patients tr:hover {background-color: #ddd;}
+          
+          #patients th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+          }
+
+          body {
+            background-image: url('https://cdn.wallpapersafari.com/73/0/vcl7xF.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+          }
+        </style>          
+</head>
+<body>
+    <h1><font color= 'white'>Patient's Details</h1></font>
+
+<table id="patients">
+  <tr>
+    <th>Name of The patient</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Diseases</th>
+    <th>Operations Done(if any)</th>
+  </tr>
+    {% for upload in show %}
+    <tr>
+    <td>{{ upload.name }}</td>
+    <td>{{ upload.age }}</td>
+    <td>{{ upload.address }}</td>
+    <td>{{ upload.diseases }}</td>
+    <td>{{ upload.operations }}</td>
+    {% endfor %}
+</table>
+<!--img src=" {{url_for('send_image', filename=image_name)}}">-->
+</body>
+</html>
