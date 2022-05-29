@@ -31,4 +31,4 @@ For using your face, firstly you would have to run these commands in cmd under v
  1) Uploading a new patient through the web browser itself.
  2) Capturing the image with live webcam instead of uploading an image.
  3) Enhancing the UI\UX.
-  
+
