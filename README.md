@@ -6,8 +6,8 @@ This can be used in the following manners:
 To run this application, firstly setup a virtual environment "env" and activate it using "env\Scripts\activate" in command prompt terminal.
 After that, install opencv, flask, opencv-contrib-python, flask_sqlalchemy, and pillow.
 Now, to run the application, type the following commands in cmd:
-"set FLASK_ENV=development"
-"set FLASK_APP=flask_webservice.py"
+"set FLASK_ENV=development",
+"set FLASK_APP=flask_webservice.py",
 "flask run"
 Then, open the generated URL.
 
@@ -19,7 +19,7 @@ The application would recognise the face and fetch the data accordingly.
 I have trained my application for 3 faces as of now.
 The data for training the face recognition application is stored in the directory "Dataset".
 For using your face, firstly you would have to run these commands in cmd under virtualenv:
-"python face_data.py"  and type the integer starting from 4 (as 3 users are already trained) #-- Keeping your face in front of your webcam --#
+"python face_data.py"  and type the integer starting from 4 (as 3 users are already trained) #-- Keeping your face in front of your webcam --# and then,
 "python face_train.py"
  and then add your name in <17>line of face_site.py  #-- names = ['None', 'Archi', 'Shruti', 'Rohit', 'your_name'] --#
  your face can be recognised now.
